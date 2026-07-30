@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush+ — Watch Faster. Learn Smarter.</title>
+    <meta name="description" content="The ultimate browser extension for power learners. Control speeds, boost volume, take notes, and master any video platform.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">⚡</div>
+                <span>Rush<span class="accent-text">+</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#mockup">Showcase</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub</a>
+                <a href="#install" class="btn btn-primary btn-sm">Install Extension</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span> Manifest V3 Ready &bull; v1.4.2
+            </div>
+            <h1>Watch Faster.<br><span class="gradient-text">Learn Smarter.</span></h1>
+            <p class="hero-subtitle">
+                The ultimate companion for online learners. Unlock intelligent speed memory, 
+                500% volume boosting, and synchronized note-taking across all your favorite video platforms.
+            </p>
+            <div class="hero-ctas" id="install">
+                <a href="https://microsoftedge.microsoft.com/addons" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Install for Microsoft Edge
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot / Mockup Section -->
+    <section class="mockup-section" id="mockup">
+        <div class="container">
+            <div class="mockup-wrapper">
+                <div class="mockup-glow"></div>
+                <div class="mockup-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="window-title">Rush+ Control Center</div>
+                    </div>
+                    <div class="window-body">
+                        <!-- Simulated Extension UI Popup -->
+                        <div class="popup-simulator">
+                            <div class="popup-top">
+                                <span class="popup-brand">⚡ Rush<span class="accent-text">+</span></span>
+                                <span class="popup-status active">Active</span>
+                            </div>
+                            <div class="popup-section-sim">
+                                <label>Playback Speed: <strong id="speed-val">2.5x</strong></label>
+                                <input type="range" min="0.5" max="5.0" step="0.1" value="2.5" class="sim-slider" disabled>
+                                <div class="speed-chips">
+                                    <span>1x</span><span>1.5x</span><span>2x</span><span class="active-chip">2.5x</span><span>3x</span>
+                                </div>
+                            </div>
+                            <div class="popup-grid-sim">
+                                <div class="sim-card">
+                                    <span class="sim-label">Volume Booster</span>
+                                    <span class="sim-value accent-text">500%</span>
+                                </div>
+                                <div class="sim-card">
+                                    <span class="sim-label">Study Mode</span>
+                                    <span class="sim-value text-green">Synced</span>
+                                </div>
+                            </div>
+                            <div class="popup-footer-sim">
+                                <span>💡 Tip: Press <kbd>Shift + Up</kbd> to speed up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engineered for <span class="gradient-text">Maximum Efficiency</span></h2>
+                <p>Every tool you need to breeze through lectures, tutorials, and long-form video content without missing a detail.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smart Speed Memory</h3>
+                    <p>Automatically remembers your preferred playback speed for specific domains or channels so you never have to manually adjust it again.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Volume Booster (500%)</h3>
+                    <p>Push audio past standard limits using the Web Audio API. Crystal-clear amplification even on poorly recorded audio tracks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Study Mode & Notes</h3>
+                    <p>Timestamp bookmarks and rich-text notes tied directly to your video timeline. Export effortlessly to Markdown or PDF.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Advanced Shortcuts</h3>
+                    <p>Fully customizable keyboard hotkeys for seamless navigation, skipping silences, and fine-tuning control without touching your mouse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Websites Section -->
+    <section class="platforms" id="platforms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Works Everywhere <span class="gradient-text">You Learn</span></h2>
+                <p>Seamless integration across all major streaming engines and HTML5 video containers.</p>
+            </div>
+            <div class="platforms-grid">
+                <div class="platform-badge">YouTube</div>
+                <div class="platform-badge">Udemy</div>
+                <div class="platform-badge">Coursera</div>
+                <div class="platform-badge">Netflix</div>
+                <div class="platform-badge">Prime Video</div>
+                <div class="platform-badge">HTML5 Video</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built With Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modern Architecture & <span class="gradient-text">Tech Stack</span></h2>
+                <p>Built with robust modern web technologies prioritizing high performance and robust privacy.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h4>Manifest V3</h4>
+                    <p>Future-proof browser extension architecture ensuring maximum safety and efficiency.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Vanilla JavaScript</h4>
+                    <p>Zero bloat, ultra-lightweight codebase running blazing fast directly in your browser.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Web Audio API</h4>
+                    <p>Advanced real-time audio manipulation nodes for distortion-free 500% volume amplification.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Chrome Extension APIs</h4>
+                    <p>Deep native browser hooks for seamless tab coordination and secure state storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Got questions? We've got answers.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Rush+ completely free?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Rush+ is open-source and 100% free to use without any hidden paywalls or premium subscription models.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the volume booster work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Rush+ routes the video's media element audio stream through a Web Audio API GainNode, allowing amplification well beyond the browser's native 100% limit safely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it collect my personal browsing data?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Your settings, notes, and preferences are stored locally on your machine using Chrome storage APIs. We do not track or sell your data.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I customize the keyboard shortcuts?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can remap any hotkey combination directly from the extension settings page or via your browser's extension shortcut configurations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>Rush<span class="accent-text">+</span></span>
+                </div>
+                <p>Empowering millions of learners worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#platforms">Supported Sites</a>
+                    <a href="#install">Download</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="https://github.com" target="_blank" rel="noopener">GitHub Repository</a>
+                    <a href="https://github.com" target="_blank" rel="noopener">Privacy Policy</a>
+                    <a href="https://github.com" target="_blank" rel="noopener">Changelog</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Rush+. Open source under MIT License.</p>
+                <p class="version-tag">v1.4.2 &bull; Static Netlify Build</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
